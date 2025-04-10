@@ -24,7 +24,7 @@ An **ETL pipeline** built to ingest, validate, transform, and load sales, custom
 ---
 
 ## Data Schema  
-![Database Schema](database_schema.drawio.png)  
+![Database Schema Diagram](docs/architecture/database_schema.drawio.png) 
 - **Core Datasets**:  
   - `customer`: Attributes like `customer_id`, `address`, `joining_date`.  
   - `sales`: Transaction links to `product`, `store`, and `sales_team` with `total_cost`.  
@@ -34,7 +34,7 @@ An **ETL pipeline** built to ingest, validate, transform, and load sales, custom
 ---
 
 ## Workflow  
-![Architecture](architecture.png)  
+![ETL Pipeline Architecture](docs/architecture/architecture.png)
 1. **Extract**: Pull raw data from AWS S3 into PySpark DataFrames/Python objects.  
 2. **Validate**:  
    - Apply data quality checks (Python/PySpark logic).  
