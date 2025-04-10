@@ -57,9 +57,11 @@ An **ETL pipeline** built to ingest, validate, transform, and load sales, custom
    ```bash  
    git clone https://github.com/devvrat-singh-2002/ETL_Pipelining_ApacheSpark.git
 
-2. pip install -r requirements.txt  # Includes PySpark, pandas, boto3
+2. ```bash
+   pip install -r requirements.txt  # Includes PySpark, pandas, boto3
 
-3. spark-submit --master local[*] etl_pipeline.py \  
---input_path s3://raw-data \  
---output_path s3://processed-data \  
---error_path s3://errors  
+3. ```bash
+   spark-submit --master local[*] etl_pipeline.py \  
+   --input_path s3://raw-data \  
+   --output_path s3://processed-data \  
+   --error_path s3://errors  
