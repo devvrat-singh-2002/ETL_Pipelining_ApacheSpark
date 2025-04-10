@@ -1,6 +1,6 @@
 # ETL Pipeline for Sales Data Processing
 
-**Tools**: Python, PySpark, Pandas, AWS S3, Databricks  
+**Tools**: Python, PySpark, AWS S3, Databricks  
 **Domain**: Data Engineering | ETL Pipelines | Batch Processing  
 
 ---
